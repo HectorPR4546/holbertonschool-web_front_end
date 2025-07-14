@@ -52,7 +52,7 @@
   --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-primary);
 
-  /* Task 19: Grid Styling and Custom Variables */
+  /* Custom Properties for 19-style */
   --section-tagline-margin: 0;
 }
 
@@ -117,36 +117,39 @@
   color: var(--nav-item-link-hover);
 }
 
-/* Task 19: Grid Styling */
+/* === Section Tagline Margin === */
 .section-tagline {
   margin: var(--section-tagline-margin);
 }
 
+/* === Row Styling === */
 ul.row {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden; /* Clearfix for floated columns */
 }
 
+/* === Column Classes === */
 .col-1-3 {
   width: 33.33%;
   float: left;
-  padding: 0.8rem; /* half of root element (1.6rem / 2 = 0.8rem) */
+  padding: 0.5rem;
 }
 
 .col-1-2 {
   width: 50%;
   float: left;
-  padding: 0.8rem; /* half of root element (1.6rem / 2 = 0.8rem) */
+  padding: 0.5rem;
 }
 
+/* === Footer Copyright Styling === */
 .footer-copyright {
   margin: 0;
   font-size: var(--font-size-small);
   color: var(--text-color);
 }
 
+/* === Footer List Alignment === */
 .footer ul {
   text-align: right;
 }
