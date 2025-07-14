@@ -226,9 +226,9 @@ ul.row {
 
 /* Hover state for <a> inside card-services */
 .card-services a:hover {
-  color: var(--color-white); /* Set foreground color to white */
-  background-color: var(--color-primary); /* Set background color to primary */
-  text-decoration: none; /* Remove text decoration */
+  color: var(--button-hover-color);
+  text-decoration: var(--button-hover-text-decoration);
+  background: var(--button-hover-background);
 }
 
 /* Task 25: Button Styling */
@@ -245,7 +245,8 @@ ul.row {
   color: var(--button-hover-color);
   text-decoration: var(--button-hover-text-decoration);
   background: var(--button-hover-background);
-  transition: color var(--transition-duration) var(--transition-cubic-bezier), background-color var(--transition-duration) var(--transition-cubic-bezier);
+  transition: color var(--transition-duration) var(--transition-cubic-bezier),
+              background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 /* Task 26: Add border radius to images */
