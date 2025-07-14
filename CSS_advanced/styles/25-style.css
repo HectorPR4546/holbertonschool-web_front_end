@@ -186,19 +186,23 @@ ul.row {
     fill: var(--text-color);
 }
 
-/* Task 24: Add background and hover state to services */
+/* === Card Services Styling === */
+
+/* Target card-title inside card-services */
 .card-services .card-title {
-  margin: 0;
+  margin: 0; /* No margin on all sides */
 }
 
+/* Target <a> inside card-services */
 .card-services a {
-  display: block;
-  padding: 2rem; /* Corrected padding to 2rem */
-  background-color: var(--color-light-grey);
+  display: block; /* Render as block-level element */
+  padding: 2rem; /* Padding set to 2x the root element */
+  background-color: var(--color-light-grey); /* Set background color */
 }
 
+/* Hover state for <a> inside card-services */
 .card-services a:hover {
-  color: var(--color-white);
-  background-color: var(--color-primary);
-  text-decoration: none;
+  color: var(--color-white); /* Set foreground color to white */
+  background-color: var(--color-primary); /* Set background color to primary */
+  text-decoration: none; /* Remove text decoration */
 }
