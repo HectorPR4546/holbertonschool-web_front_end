@@ -129,26 +129,17 @@ ul.row {
   list-style: none;
 }
 
-/* Task 20: Clearfix for .row */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Task 21: Simplify col- selector */
+/* === Column Classes Simplified === */
 [class^="col-"] {
   float: left;
   padding: 0.5rem;
 }
 
-/* === Column Classes === */
 .col-1-3 {
-  width: 33.33%;
+    width: 33.33%;
 }
-
 .col-1-2 {
-  width: 50%;
+    width: 50%;
 }
 
 /* === Footer Copyright Styling === */
@@ -163,23 +154,34 @@ ul.row {
   text-align: right;
 }
 
-/* Task 22: Dark theme for sections */
+/* === Clear Context of the Grid === */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* === Dark Theme Styling for Sections === */
 [data-section-theme="dark"] {
   --text-color: var(--color-white);
   --section-title-color: var(--color-white);
   background-color: var(--color-black);
 }
 
-/* Task 23: Fix issues for dark theme */
+/* === Footer Address Styling === */
 .footer-address {
   color: var(--text-color);
 }
 
-.social-link {
-  display: block;
-  color: var(--text-color);
+/* === Social Link Styling === */
+.social-link svg {
+    fill: var(--text-color);
 }
 
-.social-link svg {
-  fill: var(--text-color);
+.social-link {
+    display: block;
+}
+
+.social-link > svg {
+    fill: var(--text-color);
 }
